@@ -233,35 +233,6 @@ const Navbar = ({ pageName }: INavbar) => {
     };
   });
 
-  useEffect(() => {
-    if (pageName === "Digital Payment") {
-      setCurrentNav(
-        WebSubsidiaryNavs.find((nav) => nav.title === "Digital Payment")!
-      );
-      setRestOfNavs(
-        WebSubsidiaryNavs.filter((nav) => nav.title !== "Digital Payment")
-      );
-    }
-
-    if (pageName === "Infra Services") {
-      setCurrentNav(
-        WebSubsidiaryNavs.find((nav) => nav.title === "Infra Services")!
-      );
-      setRestOfNavs(
-        WebSubsidiaryNavs.filter((nav) => nav.title !== "Infra Services")
-      );
-    }
-
-    if (pageName === "Spectrum Fibre") {
-      setCurrentNav(
-        WebSubsidiaryNavs.find((nav) => nav.title === "Spectrum Fibre")!
-      );
-      setRestOfNavs(
-        WebSubsidiaryNavs.filter((nav) => nav.title !== "Spectrum Fibre")
-      );
-    }
-  }, [pageName]);
-
   return (
     <div className="  z-30 pt-2 fixed w-full  top-0     md:bg-gray-800/20 md:bg-opacity-50 md:backdrop-filter md:backdrop-blur-xl">
       <div className="container mx-auto px-3 ">
