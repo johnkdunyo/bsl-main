@@ -227,7 +227,7 @@ const Navbar = ({ pageName }: INavbar) => {
 
   return (
     <div className="  z-30 pt-2 fixed w-full  top-0     md:bg-gray-800/20 md:bg-opacity-50 md:backdrop-filter md:backdrop-blur-xl">
-      <div className="container mx-auto px-3 ">
+      <div className="custom-container2 mx-auto px-3 ">
         {/* mobile */}
         <div className="lg:hidden flex justify-between  py-2 items-start  ">
           <div className="flex  gap-1  justify-between " ref={mobileMenuRef}>
