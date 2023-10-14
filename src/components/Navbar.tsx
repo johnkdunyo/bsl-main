@@ -9,6 +9,7 @@ import {
   HiChevronRight,
   HiChevronUp,
 } from "react-icons/hi";
+import { IPageName } from "@/types/indext";
 
 interface INavs {
   id: number;
@@ -55,16 +56,7 @@ const WebSubsidiaryNavs: ISubsidiaryNavs[] = [
 ];
 
 interface INavbar {
-  pageName:
-    | "BSL Home"
-    | "Spectrum Fibre"
-    | "Infra Services"
-    | "Digital Payment"
-    | "Business"
-    | "About"
-    | "Career"
-    | "Enquiry"
-    | "Galley";
+  pageName: IPageName;
 }
 
 interface INavbarNavButtons {
@@ -125,7 +117,7 @@ const CustomNavButton2 = ({
           <h1
             className={`${
               textColorWhite ? "text-white" : "text-primary"
-            } font-medium text-md whitespace-nowrap `}
+            } font-medium text-md whitespace-nowrap hover:text-secondary`}
           >
             {title}
           </h1>
@@ -338,41 +330,65 @@ const Navbar = ({ pageName }: INavbar) => {
             )}
           </div>
 
-          <div className="flex gap-16  w-5/12 items-center justify-end  border-red-500 relative">
-            <div className="flex gap-12  ">
+          <div className="flex gap-16 w-5/12   items-center justify-end   border-red-500 relative">
+            <div className="flex gap-2 ">
               <CustomNavButton2
-                href="/business"
-                title="Business"
-                active={pageName === "Business"}
+                href="/"
+                title="Home"
+                active={pageName === "BSL Home"}
               />
 
-              <CustomNavButton2
+              {/* <CustomNavButton2
                 title="Our Portfolio"
                 active={false}
                 onClickHandler={() =>
                   setShowOurPortfolioDropdown((prev) => !prev)
                 }
-                onMouseEnterHandler={() => setShowOurPortfolioDropdown(true)}
-                onMouseLeaveHandler={() => setShowOurPortfolioDropdown(false)}
-              />
+                // onMouseEnterHandler={() => setShowOurPortfolioDropdown(true)}
+                // onMouseLeaveHandler={() => setShowOurPortfolioDropdown(false)}
+              /> */}
               <CustomNavButton2
                 href="/about"
-                title="About"
+                title="About Us"
                 active={pageName === "About"}
               />
+
+              <CustomNavButton2
+                href="/product-&-services"
+                title="Product & Services"
+                active={pageName === "Product & Services"}
+              />
+
+              <CustomNavButton2
+                href="/"
+                title="Client & Partners"
+                active={pageName === "Client & Partners"}
+              />
+
+              <CustomNavButton2
+                href="/media"
+                title="Media"
+                active={pageName === "Media"}
+              />
+
               <CustomNavButton2
                 href="/career"
-                title="Career"
+                title="Careers"
                 active={pageName === "Career"}
               />
+              <CustomNavButton2
+                href="/contact-us"
+                title="Contact Us"
+                active={pageName === "Contact Us"}
+              />
             </div>
-            <button onClick={() => setOpenDesktopSiteMenu((prev) => !prev)}>
+            {/* <button onClick={() => setOpenDesktopSiteMenu((prev) => !prev)}>
               <img
                 src={"/assets/icons/home-2.svg"}
                 className="h-10  fill-primary"
                 alt="menu icon"
               />
-            </button>
+            </button> */}
             {showOurPortfolioDropdown && (
               <div
                 className="absolute w-[90%]  -left-10 h-20 border bg-white top-16 rounded-[17px] flex justify-center flex-col shadow"
@@ -480,7 +496,7 @@ const Navbar = ({ pageName }: INavbar) => {
               </button>
             </div>
 
-            <div className="px-6 flex flex-col gap-4">
+            <div className="px-6 flex flex-col gap-4 ">
               <Link href="/business">
                 <h1
                   className="text-[#1D365A] font-medium text-4xl"

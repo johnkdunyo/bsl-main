@@ -159,7 +159,7 @@ const Footer = () => {
             </Animate.FadeUp>
             <Animate.FadeUp>
               <button className="custom-button1 text-2xl">
-                <Link href="/enquiry">Get in Touch</Link>
+                <Link href="/contact-us">Get in Touch</Link>
               </button>
             </Animate.FadeUp>
           </div>
