@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Animate } from "../animations/ScrollAnimator";
 
 const ProjectsData = [
   {
@@ -74,9 +75,9 @@ const SingleProjectComponent = ({
   imgSRC: string;
 }) => {
   return (
-    <div className="w-full max-w-[390px] h-full flex flex-col justify-between border-2 border-gray-300  rounded-[16px] shadow-md">
+    <div className="w-full max-w-[400px] h-full flex flex-col justify-between border-2 border-gray-300  rounded-[16px] shadow-md hover:shadow-inner hover:border-secondary">
       <div className=" w-full">
-        {/* <Image
+        <Image
           alt="img"
           src={imgSRC}
           width={380}
@@ -84,10 +85,10 @@ const SingleProjectComponent = ({
           // fill
           unoptimized
           className="rounded-t-[14px]"
-        /> */}
+        />
       </div>
-      <div className="px-2  pt-3 pb-8 sm:pt-2 sm:pb-6   h-full">
-        <h1 className="text-primary text-center font-medium text-lg">
+      <div className="px-2  pt-3 pb-8 sm:pt-2 sm:pb-4   h-full">
+        <h1 className="text-primary text-center font-medium text-md">
           {title}
         </h1>
       </div>
@@ -107,14 +108,16 @@ const Projects = () => {
         </div>
 
         {/* projects go here */}
-        <div className="custom-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+        <div className="custom-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-[4%] gap-y-12  mb-20">
           {ProjectsData &&
             ProjectsData.map((data, _x) => (
-              <SingleProjectComponent
-                key={_x}
-                title={data.title}
-                imgSRC={data.imgSRC}
-              />
+              <Animate.FadeUp>
+                <SingleProjectComponent
+                  key={_x}
+                  title={data.title}
+                  imgSRC={data.imgSRC}
+                />
+              </Animate.FadeUp>
             ))}
         </div>
       </div>
