@@ -1,5 +1,23 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { Animate } from "../animations/ScrollAnimator";
+
+const SinglePartner = ({
+  imageName,
+  className,
+}: {
+  imageName: string;
+  className: string;
+}) => {
+  return (
+    <div className="w-full  flex justify-center items-center">
+      <img
+        src={`/assets/icons/partners/${imageName}`}
+        className={className + ``}
+        alt={imageName}
+      />
+    </div>
+  );
+};
 
 const TrustedBy = () => {
   return (
@@ -34,16 +52,44 @@ const TrustedBy = () => {
         </div>
 
         {/* destkop */}
-        <div className="hidden mt-14 custom-container sm:flex flex-col  w-full gap-10">
-          <Animate.ScaleIn>
+
+        <Animate.ScaleIn>
+          <div className="hidden mt-14 custom-container sm:flex flex-col  w-full gap-10">
             <div className="flex w-full justify-center gap-20 ">
               <img src={"/assets/icons/partners/nedco.svg"} />
               <img src={"/assets/icons/partners/gcb.svg"} className=" p-5" />
               <img src={"/assets/icons/partners/mtn.svg"} />
               <img src={"/assets/icons/partners/nhis.svg"} />
             </div>
-          </Animate.ScaleIn>
-        </div>
+
+            <div className="grid grid-cols-5 w-full gap-10 ">
+              <SinglePartner imageName="angola_cables.png" className="" />
+              <SinglePartner imageName="afdb.jpeg" className="h-16" />
+              <SinglePartner imageName="airteltigo.png" className="" />
+              <SinglePartner imageName="china-machinery.png" className="h-16" />
+              <SinglePartner imageName="bog.png" className=" h-12" />
+            </div>
+
+            <div className="grid grid-cols-4 w-full gap-10 lg:px-8">
+              <SinglePartner imageName="cmec.png" className=" h-12" />
+              <SinglePartner imageName="Dell-PhotoRoom.png" className=" h-12" />
+              <SinglePartner imageName="mofa.png" className=" h-12" />
+              <SinglePartner imageName="moc.jpeg" className=" h-12" />
+            </div>
+
+            <div className="grid grid-cols-6 w-full gap-10">
+              <SinglePartner imageName="melcom.png" className=" h-12" />
+              <SinglePartner imageName="cisco.png" className=" h-12" />
+              <SinglePartner imageName="NCA.png" className=" h-16" />
+              <SinglePartner
+                imageName="Mensin-Gold-Bibiani.png"
+                className=" h-12"
+              />
+              <SinglePartner imageName="mof.png" className=" h-12" />
+              <SinglePartner imageName="dolphin.png" className=" h-12" />
+            </div>
+          </div>
+        </Animate.ScaleIn>
       </div>
     </section>
   );
