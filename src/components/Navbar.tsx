@@ -189,6 +189,7 @@ const Navbar = ({ pageName }: INavbar) => {
   const [openDesktopSiteMenu, setOpenDesktopSiteMenu] =
     useState<boolean>(false);
   const [openMediaDropdown, setOpenMediaDropdown] = useState<boolean>(false);
+  const [openAboutDropdown, setOpenABoutDropdown] = useState<boolean>(false);
   const [openDesktopSubsidiaryMenu, setOpenDesktopSubsidiaryMenu] =
     useState<boolean>(false);
 
@@ -440,7 +441,7 @@ const Navbar = ({ pageName }: INavbar) => {
           exit={{ opacity: 0 }}
           className={` ${
             openDesktopSiteMenu ? "flex" : "hidden"
-          } bg-white w-full h-[94vh] md:h-[90vh] absolute top-0 left-0 flex  px-3 py-2 rounded-bl-[110px] md:rounded-bl-[200px] z-30  `}
+          } bg-white w-full  md:h-[90vh] absolute top-0 left-0 flex  px-3 py-2 rounded-bl-[110px] md:rounded-bl-[200px] z-30  `}
         >
           {/* mobile */}
           <div className="lg:hidden container mx-auto flex w-full justify-between flex-col gap-4 h-full  pt-2">
@@ -497,34 +498,57 @@ const Navbar = ({ pageName }: INavbar) => {
             </div>
 
             <div className="px-6 flex flex-col gap-4 ">
-              <Link href="/business">
+              <Link href="/">
                 <h1
-                  className="text-[#1D365A] font-medium text-4xl"
+                  className="text-[#1D365A] font-medium text-3xl"
                   onClick={() => setOpenDesktopSiteMenu(false)}
                 >
-                  Business
+                  Home
                 </h1>
               </Link>
-              <Link href="/about">
+              <div className="text-[#1D365A]  ">
+                <button
+                  className=" font-medium text-3xl  text-left flex items-center gap-2"
+                  onClick={() => setOpenABoutDropdown((prev) => !prev)}
+                >
+                  About Us
+                  <img src={"/assets/icons/navs/down-blue.svg"} className=" " />
+                </button>
+                <div
+                  className={`${
+                    openAboutDropdown ? "flex" : "hidden"
+                  }  justify-start gap-5 mt-3`}
+                >
+                  <Link href="/about">
+                    <h1>About Us</h1>
+                  </Link>
+                  <Link href="/">
+                    <h1>Management</h1>
+                  </Link>
+                </div>
+              </div>
+
+              <Link href="/product-&-services">
                 <h1
-                  className="text-[#1D365A] font-medium text-4xl"
+                  className="text-[#1D365A] font-medium text-3xl"
                   onClick={() => setOpenDesktopSiteMenu(false)}
                 >
-                  About
-                </h1>
-              </Link>
-              <Link href="/career">
-                <h1
-                  className="text-[#1D365A] font-medium text-4xl"
-                  onClick={() => setOpenDesktopSiteMenu(false)}
-                >
-                  Career
+                  Products & Services
                 </h1>
               </Link>
 
-              <div className="text-[#1D365A]  h-20">
+              <Link href="/">
+                <h1
+                  className="text-[#1D365A] font-medium text-3xl"
+                  onClick={() => setOpenDesktopSiteMenu(false)}
+                >
+                  Client & Partners
+                </h1>
+              </Link>
+
+              <div className="text-[#1D365A]  ">
                 <button
-                  className=" font-medium text-4xl  text-left flex items-center gap-2"
+                  className=" font-medium text-3xl  text-left flex items-center gap-2"
                   onClick={() => setOpenMediaDropdown((prev) => !prev)}
                 >
                   Media
@@ -546,6 +570,24 @@ const Navbar = ({ pageName }: INavbar) => {
                   </Link>
                 </div>
               </div>
+
+              <Link href="/career">
+                <h1
+                  className="text-[#1D365A] font-medium text-3xl"
+                  onClick={() => setOpenDesktopSiteMenu(false)}
+                >
+                  Careers
+                </h1>
+              </Link>
+
+              <Link href="/contact-us">
+                <h1
+                  className="text-[#1D365A] font-medium text-3xl"
+                  onClick={() => setOpenDesktopSiteMenu(false)}
+                >
+                  Contact Us
+                </h1>
+              </Link>
             </div>
 
             <div className="px-6 flex  flex-col gap-6">
