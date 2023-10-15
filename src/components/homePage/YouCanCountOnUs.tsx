@@ -64,16 +64,16 @@ const YouCanCountOnUs = () => {
           <div className=" max-w-2xl text-center">
             <Animate.FadeUp>
               <h1 className="uppercase text-[#AB2346] text-xl mb-10 tracking-wider font-medium  ">
-                You can count on us
+                YOUR ONE STOP ICT COMPANY
               </h1>
             </Animate.FadeUp>
             <Animate.FadeUp>
               <p className="text-white paragraphText1">
-                Our determination as a business is to offer world class
-                connectivity and digital services to our clients and this has
-                enabled us to build a dynamic 360 solution approach for
-                connectivity, digital payment services, internet service
-                solutions, value added and messaging services.
+                As a business we are committed to offering world class
+                connectivity and digital solutions to our clients. This
+                dedication has enabled us to build a dynamic 360 solution
+                approach for connectivity, digital payments services, internet
+                service solutions and value added services
               </p>
             </Animate.FadeUp>
           </div>
