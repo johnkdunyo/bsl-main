@@ -119,67 +119,65 @@ const TrustedBy = () => {
         </div>
 
         {/* destkop */}
-        <Animate.ScaleIn>
-          <div className="hidden mt-14 custom-container sm:flex flex-col  w-full gap-10">
-            <div className="flex w-full justify-center gap-20 border">
-              <img src={"/assets/icons/partners/nedco.svg"} />
-              <img src={"/assets/icons/partners/gcb.svg"} className=" p-5" />
-              <img src={"/assets/icons/partners/mtn.svg"} />
-              <img src={"/assets/icons/partners/nhis.svg"} />
-            </div>
+        <div className="hidden mt-14 custom-container sm:flex flex-col  w-full gap-10">
+          <Animate.ScaleIn className="flex w-full justify-center gap-20 ">
+            <img src={"/assets/icons/partners/nedco.svg"} />
+            <img src={"/assets/icons/partners/gcb.svg"} className=" p-5" />
+            <img src={"/assets/icons/partners/mtn.svg"} />
+            <img src={"/assets/icons/partners/nhis.svg"} />
+          </Animate.ScaleIn>
 
-            <div className="grid grid-cols-5 w-full gap-10 border">
-              <SinglePartner imageName="angola_cables.png" className="" />
-              <SinglePartner imageName="afdb.jpeg" className="h-16" />
-              <SinglePartner imageName="airteltigo.png" className="" />
-              <SinglePartner imageName="china-machinery.png" className="h-16" />
-              <SinglePartner imageName="bog.png" className=" w-full" />
-            </div>
+          <Animate.ScaleIn className="grid grid-cols-5 w-full gap-10 ">
+            <SinglePartner imageName="angola_cables.png" className="" />
+            <SinglePartner imageName="afdb.jpeg" className="h-16" />
+            <SinglePartner imageName="airteltigo.png" className="" />
+            <SinglePartner imageName="china-machinery.png" className="h-16" />
+            <SinglePartner imageName="bog.png" className=" w-full" />
+          </Animate.ScaleIn>
 
-            <div className="grid grid-cols-4 w-full gap-10 lg:px-8 border">
-              <SinglePartner imageName="cmec.png" className=" w-full h-16" />
-              <SinglePartner imageName="Dell-PhotoRoom.png" className=" h-16" />
-              <SinglePartner imageName="mofa.png" className=" w-full h-16" />
-              <SinglePartner imageName="moc.jpeg" className=" w-full h-16" />
-            </div>
+          <Animate.ScaleIn className="grid grid-cols-4 w-full gap-10 lg:px-8 ">
+            <SinglePartner imageName="cmec.png" className=" w-full h-16" />
+            <SinglePartner imageName="Dell-PhotoRoom.png" className=" h-16" />
+            <SinglePartner imageName="mofa.png" className=" w-full h-16" />
+            <SinglePartner imageName="moc.jpeg" className=" w-full h-16" />
+          </Animate.ScaleIn>
 
-            <div className="grid grid-cols-6 w-full gap-10 border">
-              <SinglePartner imageName="melcom.png" className=" w-full" />
-              <SinglePartner imageName="cisco.png" className=" h-16" />
-              <SinglePartner imageName="NCA.png" className=" h-20" />
-              <SinglePartner
-                imageName="Mensin-Gold-Bibiani.png"
-                className=" h-16"
-              />
-              <SinglePartner imageName="mof.png" className=" h-16" />
-              <SinglePartner imageName="dolphin.png" className=" h-16" />
-            </div>
+          <Animate.ScaleIn className="grid grid-cols-6 w-full gap-10 ">
+            <SinglePartner imageName="melcom.png" className=" w-full" />
+            <SinglePartner imageName="cisco.png" className=" h-16" />
+            <SinglePartner imageName="NCA.png" className=" h-20" />
+            <SinglePartner
+              imageName="Mensin-Gold-Bibiani.png"
+              className=" h-16"
+            />
+            <SinglePartner imageName="mof.png" className=" h-16" />
+            <SinglePartner imageName="dolphin.png" className=" h-16" />
+          </Animate.ScaleIn>
 
-            <div className="grid grid-cols-5 w-full gap-10 border">
-              <SinglePartner imageName="vmware-ready.png" className=" h-16" />
-              <SinglePartner imageName="Veeam.png" className=" w-full" />
-              <SinglePartner imageName="UMB.png" className=" h-16" />
-              <SinglePartner imageName="tejas_networks.png" className=" h-16" />
-              <SinglePartner imageName="paix.png" className=" h-12" />
-            </div>
+          <Animate.ScaleIn className="grid grid-cols-5 w-full gap-10 ">
+            <SinglePartner imageName="vmware-ready.png" className=" h-16" />
+            <SinglePartner imageName="Veeam.png" className=" w-full" />
+            <SinglePartner imageName="UMB.png" className=" h-16" />
+            <SinglePartner imageName="tejas_networks.png" className=" h-16" />
+            <SinglePartner imageName="paix.png" className=" h-12" />
+          </Animate.ScaleIn>
 
-            <div className="grid grid-cols-6 w-full gap-10 border">
-              <SinglePartner imageName="sap.jpeg" className="h-20" />
-              <SinglePartner imageName="radwin.png" className="w-full" />
-              <SinglePartner imageName="uba.gif" className="h-20" />
-              <SinglePartner imageName="racks_africa.png" className="w-full" />
-              <SinglePartner imageName="mtn.png" className="h-20" />
-              <SinglePartner imageName="pro_data.jpeg" className="h-24" />
-            </div>
+          <Animate.ScaleIn className="grid grid-cols-6 w-full gap-10 ">
+            <SinglePartner imageName="sap.jpeg" className="h-20" />
+            <SinglePartner imageName="radwin.png" className="w-full" />
+            <SinglePartner imageName="uba.gif" className="h-20" />
+            <SinglePartner imageName="racks_africa.png" className="w-full" />
+            <SinglePartner imageName="mtn.png" className="h-20" />
+            <SinglePartner imageName="pro_data.jpeg" className="h-24" />
+          </Animate.ScaleIn>
 
-            <div className="w-full grid grid-cols-4 gap-10 border">
-              <SinglePartner imageName="onix.png" className=" h-16" />
-              <SinglePartner imageName="nita.png" className="w-full" />
-              <SinglePartner imageName="stanbic_bank.jpeg" className="w-full" />
-              <SinglePartner imageName="ghs.jpeg" className="h-20" />
-            </div>
-          </div>
-        </Animate.ScaleIn>
+          <Animate.ScaleIn className="grid grid-cols-4 w-full gap-10 ">
+            <SinglePartner imageName="onix.png" className=" h-16" />
+            <SinglePartner imageName="nita.png" className="w-full" />
+            <SinglePartner imageName="stanbic_bank.jpeg" className="w-full" />
+            <SinglePartner imageName="ghs.jpeg" className="h-20" />
+          </Animate.ScaleIn>
+        </div>
       </div>
     </section>
   );

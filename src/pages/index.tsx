@@ -7,6 +7,7 @@ import SiteLayout from "@/components/Layout/SiteLayout";
 import MissionVission from "@/components/homePage/MissionVission2";
 import YouCanCountOnUs from "@/components/homePage/YouCanCountOnUs";
 import MissionVissionMobile from "@/components/homePage/MissionVissionMobile";
+import Projects from "@/components/homePage/Projects";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <MissionVissionMobile />
         <CertifiedSection />
         <OurCultureSection />
+        <Projects />
         <TrustedBy />
         <HappyClients />
       </>
