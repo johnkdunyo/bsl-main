@@ -11,13 +11,13 @@ const SingleSlide = ({
   description: string;
 }) => {
   return (
-    <div className="w-full h-full flex justify-center items-center ">
-      <div className=" sm:-ml-[30%] ">
+    <div className="w-full h-full custom-container flex justify-center items-center  ">
+      <div className=" w-full  pl-[5%]">
         <h1 className="font-bold  md:text-[14rem] text-[#AB2346]">{title}</h1>
-        <p className="paragraphText1 text-2xl px-4 sm:px-0">
-          To empower excellence through innovative <br /> communication and
-          digital solutions.
-        </p>
+        <p
+          className="paragraphText1 text-2xl px-4 sm:px-0"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
       </div>
     </div>
   );
@@ -32,7 +32,7 @@ const MissionVission = () => {
   };
 
   return (
-    <section className="carousel w-full  h-[60vh] bg-[#000A26]   hidden sm:flex">
+    <section className=" carousel w-full  h-[60vh] bg-[#000A26]   hidden sm:flex mb-20">
       <Swiper
         onBeforeInit={onBeforeInit}
         spaceBetween={0}
@@ -56,7 +56,7 @@ const MissionVission = () => {
         <SwiperSlide>
           <SingleSlide
             title="Vision"
-            description="To be a world class communication and Digital partner of choice from African by Africans."
+            description="To be a world class communication and Digital<br/> partner of choice from African by Africans."
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -67,22 +67,24 @@ const MissionVission = () => {
           />
         </SwiperSlide>
 
-        <div className=" flex justify-between   absolute top-[20%] sm:top-[50%] bottom-[50%] w-full  px-10 sm:px-[15%]">
-          <button
-            className=" z-10 w-16 h-16 sm:w-16 sm:h-full"
-            ref={swiperNavPrevRef}
-            onClick={() => swiperRef!.current?.slidePrev()}
-          >
-            <img src={"/assets/icons/nav-left.svg"} className=" w-full " />
-          </button>
+        <div className="absolute top-[20%] sm:top-[50%] bottom-[50%] w-full  px-10 sm:px-[10%] ">
+          <div className="flex justify-between container mx-auto px-6 max-w-7xl ">
+            <button
+              className=" z-10 w-16 h-16 sm:w-16 sm:h-full"
+              ref={swiperNavPrevRef}
+              onClick={() => swiperRef!.current?.slidePrev()}
+            >
+              <img src={"/assets/icons/nav-left.svg"} className=" w-full " />
+            </button>
 
-          <button
-            className=" z-10 w-16 h-16 sm:w-16 sm:h-full"
-            ref={swiperNavNextRef}
-            onClick={() => swiperRef!.current?.slideNext()}
-          >
-            <img src={"/assets/icons/nav-right.svg"} className="w-full" />
-          </button>
+            <button
+              className=" z-10 w-16 h-16 sm:w-16 sm:h-full"
+              ref={swiperNavNextRef}
+              onClick={() => swiperRef!.current?.slideNext()}
+            >
+              <img src={"/assets/icons/nav-right.svg"} className="w-full" />
+            </button>
+          </div>
         </div>
       </Swiper>
     </section>
