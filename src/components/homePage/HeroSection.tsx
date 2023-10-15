@@ -100,16 +100,14 @@ const HeroSection = () => {
                   </div>
                   <Animate.FadeUp>
                     <div className="text-4xl sm:text-6xl mr-6 leading-[3rem]  font-extralight ">
-                      <h2 className="">We are Engineering </h2>
-                      <h2 className="font-bold sm:mt-4">
-                        Africa&apos;s Digital Future
+                      <h2 className="font-bold sm:mt-4 leading-[3.2rem] sm:leading-[5rem]  max-w-2xl">
+                        Engineering Africa&apos;s Digital Future
                       </h2>
                     </div>
                   </Animate.FadeUp>
                   <Animate.FadeIn>
-                    <p className="flex  text-2xl sm:text-3xl  ">
-                      We&apos;re offering 360 digital <br />
-                      solutions Globally from African by Africans.
+                    <p className="flex  text-2xl sm:text-3xl  font-light ">
+                      By offering 360 digital solutions globally.
                     </p>
                   </Animate.FadeIn>
                 </div>
@@ -122,16 +120,14 @@ const HeroSection = () => {
                   </div>
                   <Animate.FadeUp>
                     <div className="text-4xl sm:text-6xl mr-6 leading-[3rem]   font-extralight ">
-                      <h2 className="">We are Engineering </h2>
-                      <h2 className="font-bold sm:mt-4">
-                        Africa&apos;s Digital Future
+                      <h2 className="font-bold sm:mt-4 leading-[3.2rem] sm:leading-[5rem]  max-w-2xl">
+                        Engineering Africa&apos;s Digital Future
                       </h2>
                     </div>
                   </Animate.FadeUp>
                   <Animate.FadeIn>
-                    <p className="flex  text-2xl sm:text-3xl  ">
-                      We&apos;re offering 360 digital <br />
-                      solutions Globally from African by Africans.
+                    <p className="flex  text-2xl sm:text-3xl font-light  ">
+                      By offering 360 digital solutions globally.
                     </p>
                   </Animate.FadeIn>
                 </div>
