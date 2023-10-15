@@ -102,7 +102,7 @@ const Projects = () => {
         <div className="relative w-full flex justify-center">
           <div className="w-full border border-[#1D365A]" />
           <h1 className="text-[#1D365A] uppercase text-center font-medium tracking-widest text-lg  sm:text-2xl w-fit px-12 absolute -top-3 bg-white">
-            Trusted by
+            Projects
           </h1>
         </div>
 
