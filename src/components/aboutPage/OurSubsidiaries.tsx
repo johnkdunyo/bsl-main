@@ -8,19 +8,31 @@ const SingleSubsidiaryCard = ({
   imageURL,
   description,
   href,
+  descriptionIntro,
+  descriptionArrayList,
 }: {
+  descriptionIntro?: string;
   description: string;
   imageURL: string;
+  descriptionArrayList?: string[];
   href: string;
 }) => {
   return (
     <Animate.ScaleIn className="w-full">
-      <div className="bg-[#FFFFFF] w-full  justify-between p-8 rounded-[50px] flex flex-col gap-6 sm:h-[23rem] ">
+      <div className="bg-[#FFFFFF] w-full  justify-between p-8 rounded-[50px] flex flex-col gap-6  h-full ">
         <div>
-          <div className="h-20  flex items-start justify-start">
+          <div className="h-20  flex items-start justify-start mb-4">
             <img src={imageURL} alt="spectrum" className="h-full  " />
           </div>
-          <p className="text-[#1D365A] paragraphText1 ">{description}</p>
+          <p className="text-primary font-semibold ">{descriptionIntro}</p>
+          <p className="text-[#1D365A] paragraphText1">{description}</p>
+          {descriptionArrayList && (
+            <ol className="text-primary paragraphText1 ml-2">
+              {descriptionArrayList.map((item, _x) => (
+                <li key={_x}>- {item}</li>
+              ))}
+            </ol>
+          )}
         </div>
 
         <div>
@@ -34,7 +46,9 @@ const SingleSubsidiaryCard = ({
             whileTap={{ scale: 0.9 }}
             whileInView={{ opacity: 1 }}
           >
-            <Link href={href}>Learn More</Link>
+            <a target="_blank" href={href}>
+              Learn More
+            </a>
           </motion.button>
         </div>
       </div>
@@ -61,29 +75,37 @@ const OurSubsidiaries = () => {
           </Animate.FadeUp>
         </div>
 
-        <SingleSubsidiaryCard
-          description="Spectrum Fibre Limited is a Fibre Optic Infrastructure Company in Ghana
-        with over 4000+km of Fibre covering the Western, Eastern and Northern
-        Corridors of Ghana. Formed as a Public Private Partnership between
-        Broadspectrum Limited and the government of Ghana through the Ghana
-        Infrastructure Investment Fund (GIIF) in the year 2017."
-          imageURL="/assets/icons/spectrum.svg"
-          href="/spectrumfibre"
-        />
-
         <div className="flex flex-col  gap-10 sm:flex-row">
+          <SingleSubsidiaryCard
+            descriptionIntro="Connecting you at the speed of light"
+            description="SFL has deployed and runs the second largest and most extensive nonpareil fibre optic backbone network in Ghana (+4000 Km)."
+            imageURL="/assets/icons/spectrum.svg"
+            href="https://sfl.com.gh/"
+          />
           <SingleSubsidiaryCard
             description="Payment Service Provider (PSP) Licensed Business providing services for payment gateway and bill Payment – E.G. Northern Electricity Distribution Company (NedCo), Marketplace (E-Agric)"
             imageURL="/assets/icons/bdp.svg"
-            href="/bdp"
-          />
-
-          <SingleSubsidiaryCard
-            description="Fibre Maintenance and Logistics Company"
-            imageURL="/assets/icons/isg.svg"
-            href="/isg"
+            href="http://bdp.com.gh/"
           />
         </div>
+        <SingleSubsidiaryCard
+          descriptionIntro="A well-resourced infrastructure service provider in IE & Telecoms"
+          description="Infrastructure Services Ltd (ISG) is an infrastructure services company providing logistic deployment, maintenance, and support services in the power, telecommunication, and mine Support services sectors of Ghana. The services of ISG are internally leveraged by all affiliates for efficiency and control. Our Services include:"
+          descriptionArrayList={[
+            "Fiber infrastructure Deployment Microwave Radio Deployment LAN infrastructure deployments",
+            "Data Centre build and management",
+            "Service Maintenance and Support",
+          ]}
+          imageURL="/assets/icons/isg.svg"
+          href="https://isg.com.gh/"
+        />
+
+        <SingleSubsidiaryCard
+          descriptionIntro="AgroSpectrum"
+          description="The Strategic Business Unit offers Agric Marketplace services which include Farm 2 Factory, Farm 2 Retail, Farm 2 Table, Planting for Food & Jobs, Subsidy programs, Insurance, Healthcare, loans for farmers, Weather & Agronomy services, Agric Value Chain actors, Cooperatives-Out-grower services. BSL has delivered an E- Agriculture Management Platform to the Ministry of Food and Agriculture (MoFA) which included the digital registration of 1.6Million farmers and the deployment of the first- ever electronic subsidy redemption program in Ghana."
+          imageURL="/assets/icons/agro-main.png"
+          href="https://isg.com.gh/"
+        />
       </div>
     </section>
   );

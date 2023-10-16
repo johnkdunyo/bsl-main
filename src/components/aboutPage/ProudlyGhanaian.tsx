@@ -27,11 +27,13 @@ const ProudlyGhanaian = () => {
 
             <Animate.FadeUp>
               <p className="text-[#1D365A] paragraphText1">
-                Broadspectrum Limited is a Ghanaian information communication
-                technology company that is active in the technological industry.
-                It has partnered with GCB Bank Limited to launch the first
-                bank-backed mobile money service in Ghana and has over 400,000
-                users. In partnership with the government of Ghana.
+                Broadspectrum Limited is a Ghanaian information and
+                communication technology company that plays a key role in the
+                technological industry. Broadspectrum has partnered with GCB
+                Bank Limited to launch the first bank-backed mobile money
+                service (G-Money) in Ghana. As the enablers of G-Money, which
+                has reached over 2.4 million customers nationwide, GCB recently
+                emerged as the winner at the 2022 Ghana Club 100 Awards.
               </p>
             </Animate.FadeUp>
           </div>

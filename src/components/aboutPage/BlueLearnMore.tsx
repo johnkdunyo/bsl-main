@@ -16,9 +16,9 @@ const BlueLearnMore = () => {
           <div>
             <Animate.FadeUp>
               <p className="paragraphText1 sm:mt-14">
-                Broadspectrum also set up Spectrum Fibre Company Limited to
-                deploy ultra-modern fibre infrastructure connecting more than
-                100 towns in Ghana. The company is focused on innovation and
+                Broadspectrum also established spectrum Fiber Company Limited to
+                deploy ultra-modern fiber infrastructure connecting over 100
+                towns in Ghana. The company is focused on innovation and
                 collaboration and has deployed next-generation infrastructure
                 for improved customer experience and productivity.
               </p>

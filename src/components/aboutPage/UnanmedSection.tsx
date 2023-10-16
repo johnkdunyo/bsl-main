@@ -101,7 +101,7 @@ const UnanmedSection = () => {
             <SwiperSlide>
               <SingleComponent
                 imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065681/bsl-website/bsl/about/eagric_fuqruq.jpg"
-                description="Broadspectrum designed, built and operates an Agriculture Marketplace Platform (E-Agric) for the ministry of Food and Agriculture (MOFA). This has led to the registration of over 1 million farmers and agricultural value chain actors ."
+                description="Broadspectrum designed, built and operates an Agriculture Marketplace platform (Agro-Spectrum) for the Ministry of Food and Agriculture (MOFA). This has led to the registration of over 1.4 million farmers.."
               />
             </SwiperSlide>
 
