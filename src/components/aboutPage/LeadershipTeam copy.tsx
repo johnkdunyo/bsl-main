@@ -72,37 +72,21 @@ const SingleSlide = ({
 };
 
 const LeadershipTeam = () => {
-  const SingleComponent = ({
-    name,
-    portfolio,
-    description,
-    imageURL,
-  }: {
-    name: string;
-    portfolio: string;
-    description: string;
-    imageURL: string;
-  }) => {
-    return (
-      <div className="flex justify-between">
-        <div>
-          <Image
-            src={imageURL}
-            placeholder="blur"
-            blurDataURL={imageURL}
-            className="sm:h-4/5  "
-            height={240}
-            width={240}
-            alt={name}
-          />
-        </div>
-        <div>
-          <h1 className="text-xl sm:text-2xl">{name}</h1>
-          <h1 className="text-[#82AEC9] text-xl sm:text-2xl">{portfolio}</h1>
-          <p className="text-base">{description}</p>
-        </div>
-      </div>
-    );
+  const swiperRef = useRef<SwiperCore>();
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const swiperNavPrevRef = React.useRef<HTMLButtonElement>(null);
+  const swiperNavNextRef = React.useRef<HTMLButtonElement>(null);
+  const paginationLabel = React.useRef<HTMLHeadingElement>(null);
+
+  const onBeforeInit = (Swiper: SwiperCore): void => {
+    swiperRef.current = Swiper;
+  };
+
+  const updateIndex = (swiperInstance: SwiperType) => {
+    if (swiperInstance === null) return;
+    const currentSlide = swiperInstance?.activeIndex;
+    setCurrentIndex(swiperInstance.realIndex + 1);
   };
 
   return (
@@ -116,7 +100,7 @@ const LeadershipTeam = () => {
         </div>
 
         <>
-          {/* <Swiper
+          <Swiper
             onBeforeInit={onBeforeInit}
             initialSlide={5}
             onActiveIndexChange={updateIndex}
@@ -240,18 +224,7 @@ const LeadershipTeam = () => {
                 <img src={"/assets/icons/nav-right.svg"} className="w-full" />
               </button>
             </div>
-          </Swiper> */}
-
-          <div className="w-full h-20 custom-container">
-            <div className="border">
-              <SingleComponent
-                name="Razak Awudulai"
-                portfolio="Chief Executive Officer"
-                imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png"
-                description=""
-              />
-            </div>
-          </div>
+          </Swiper>
         </>
       </div>
     </section>
