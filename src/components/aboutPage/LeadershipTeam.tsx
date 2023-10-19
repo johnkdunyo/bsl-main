@@ -1,258 +1,85 @@
 import React, { useRef, useState } from "react";
-import { Autoplay, Swiper as SwiperType } from "swiper";
-import SwiperCore from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-// import required modules
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import CustomBackground1 from "../animations/CustomBackground1";
 import Link from "next/link";
 import Image from "next/image";
 
-const SingleSlide = ({
-  id,
-  currentIndex,
+const SingleLeadershipComponent = ({
   name,
   portfolio,
-  shortDescription,
+  description,
   imageURL,
-  href,
-  imgHeight,
-  imgWidth,
 }: {
-  id: number;
-  currentIndex: number;
   name: string;
   portfolio: string;
-  shortDescription: string;
+  description: string;
   imageURL: string;
-  imgHeight: number;
-  imgWidth: number;
-  href: string;
 }) => {
   return (
-    <div
-      className={`w-full flex flex-col sm:flex-row  bg-transparent z-20  h-[40rem] items-center  ${
-        currentIndex !== id && " border-green-500 opacity-40"
-      } `}
-    >
-      <Image
-        src={imageURL}
-        placeholder="blur"
-        blurDataURL={imageURL}
-        className="sm:h-4/5  "
-        height={imgHeight}
-        width={imgWidth}
-        alt={name}
-      />
-
-      <div
-        className={` ${currentIndex !== id && "hidden"}
-        } flex flex-col justify-center   border-red-400 w-full  `}
-      >
-        <div
-          className="flex flex-col items-start gap-2 my-2 mx-4 sm:w-[24rem] 
-       "
-        >
-          <h1 className="text-xl sm:text-2xl">{name}</h1>
-          <h1 className="text-[#82AEC9] text-xl sm:text-2xl">{portfolio}</h1>
-          <p className="text-base">{shortDescription}</p>
-          <button className="custom-button1 my-4 text-sm">
-            <Link href={href}>Learn More</Link>
-          </button>
-        </div>
+    <div className="flex justify-between gap-2 sm:gap-3 w-full ">
+      <div className=" w-[240px] sm:w-[450px] relative">
+        <Image
+          src={imageURL}
+          placeholder="blur"
+          blurDataURL={imageURL}
+          className="w-full rounded-[20px] sm:rounded-[30px] sm:h-[360px] object-cover"
+          height={616}
+          width={400}
+          alt={name}
+        />
+      </div>
+      <div className=" w-full sm:mt-10">
+        <h1 className="text-xl sm:text-2xl font-medium">{name}</h1>
+        <h1 className="text-[#82AEC9] text-md mt-1 sm:text-xl font-medium">
+          {portfolio}
+        </h1>
+        <p className="text-sm  font-light sm:text-base  border-red-500">
+          {description}
+        </p>
       </div>
     </div>
   );
 };
 
 const LeadershipTeam = () => {
-  const SingleComponent = ({
-    name,
-    portfolio,
-    description,
-    imageURL,
-  }: {
-    name: string;
-    portfolio: string;
-    description: string;
-    imageURL: string;
-  }) => {
-    return (
-      <div className="flex justify-between">
-        <div>
-          <Image
-            src={imageURL}
-            placeholder="blur"
-            blurDataURL={imageURL}
-            className="sm:h-4/5  "
-            height={240}
-            width={240}
-            alt={name}
-          />
-        </div>
-        <div>
-          <h1 className="text-xl sm:text-2xl">{name}</h1>
-          <h1 className="text-[#82AEC9] text-xl sm:text-2xl">{portfolio}</h1>
-          <p className="text-base">{description}</p>
-        </div>
-      </div>
-    );
-  };
-
   return (
-    <section className="bg-[#0C233E] relative sm:py-16">
+    <section className="bg-[#0C233E] relative sm:py-16  ">
       <CustomBackground1 />
       <div className="py-10 z-10 relative">
-        <div className="  custom-container sm:mt-16 sm:-mb-8">
+        <div className="  custom-container sm:mt-16 sm:-mb-8 sm:hidden">
+          <h1 className="text-[#82AEC9] font-bold h-full  text-[3.7rem] sm:text-[10rem] sm:whitespace-nowrap whitespace-pre-line leading-[3.5rem]  opacity-30   ">
+            Leadership Team
+          </h1>
+        </div>
+        {/* big screens */}
+        <div className="hidden sm:block  sm:mt-16 sm:-mb-8 w-full  text-center">
           <h1 className="text-[#82AEC9] font-bold h-full  text-[3.7rem] sm:text-[10rem] sm:whitespace-nowrap whitespace-pre-line leading-[3.5rem]  opacity-30   ">
             Leadership Team
           </h1>
         </div>
 
-        <>
-          {/* <Swiper
-            onBeforeInit={onBeforeInit}
-            initialSlide={5}
-            onActiveIndexChange={updateIndex}
-            // cssMode={true}
-            effect={"coverflow"}
-            spaceBetween={60}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={1.5}
-            loop={true}
-            mousewheel={true}
-            autoplay={{
-              delay: 5000,
-            }}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 1.5,
-              slideShadows: false,
-            }}
-            // bigger screens
-            breakpoints={{
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 180,
-                coverflowEffect: {
-                  rotate: 0,
-                  stretch: 0,
-                  depth: 100,
-                  modifier: 1.5,
-                  slideShadows: false,
-                },
-              },
-            }}
-            navigation={{
-              prevEl: swiperNavPrevRef?.current,
-              nextEl: swiperNavNextRef?.current,
-            }}
-            pagination={{ clickable: true }}
-            modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
-            keyboard={true}
-            className="w-full   relative"
-          >
-            <SwiperSlide>
-              <SingleSlide
-                id={1}
-                currentIndex={currentIndex}
-                name="Samuel Osew – Kwatia"
-                portfolio={"Executive Member"}
-                shortDescription={
-                  "Samuel has over 18 years of professional experience in finance, accounting, taxation, and banking..."
-                }
-                imageURL={
-                  "https://res.cloudinary.com/diek2uivi/image/upload/v1686065717/bsl-website/bsl/board/sam_igimba.png"
-                }
-                imgHeight={882}
-                imgWidth={706}
-                href="/about/4"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SingleSlide
-                id={2}
-                currentIndex={currentIndex}
-                name="Razak Awudalai"
-                portfolio={"Group CE0"}
-                shortDescription={
-                  "Razak is the Chief Executive Officer (CEO) of Broadspectrum Limited. He is a Founding..."
-                }
-                imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065716/bsl-website/bsl/board/razak_sbkf2x.png"
-                imgHeight={1026}
-                imgWidth={732}
-                href="/about/1"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SingleSlide
-                id={3}
-                currentIndex={currentIndex}
-                name="Nana Dwemoh Benneh"
-                portfolio={"Chairman"}
-                shortDescription={
-                  "Dwemoh Benneh has considerable local and international expertise in banking..."
-                }
-                imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/nana_lwkean.png"
-                imgHeight={994}
-                imgWidth={650}
-                href="/about/2"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SingleSlide
-                id={4}
-                currentIndex={currentIndex}
-                name="Kris Senanu"
-                portfolio={"Executive Member"}
-                shortDescription={
-                  "Kris Senanu – Member Kris is an accomplished business leader with 20+ years of experience..."
-                }
-                imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/kris_nfhaym.png"
-                imgHeight={448}
-                imgWidth={334}
-                href="/about/3"
-              />
-            </SwiperSlide>
-            <div className=" flex justify-between   absolute top-[50%] bottom-[50%] w-full sm:px-10 px-2">
-              <button
-                className=" z-10 w-16 h-16 sm:w-20 sm:h-full"
-                ref={swiperNavPrevRef}
-                onClick={() => swiperRef!.current?.slidePrev()}
-              >
-                <img src={"/assets/icons/nav-left.svg"} className=" w-full " />
-              </button>
+        <div className="w-full  custom-container  relative mt-6 sm:mt-24">
+          <div className=" flex  flex-col lg:flex-row justify-between gap-10 w-full">
+            <SingleLeadershipComponent
+              name="Razak Awudulai"
+              portfolio="Chief Executive Officer"
+              imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png"
+              description="Razak is an accomplished business leader with 20+ years. of experience in creating enabling environments and building high-performance teams. He is passionate about the technology ecosystem and has helped to grow many tech businesses both in the public and private sectors globally. More specifically, he has extensive experience working with and helping to provide unique and innovative digital solutions to boost Africa’s digital economy."
+            />
 
-              <button
-                className=" z-10 w-16 h-16 sm:w-20 sm:h-full"
-                ref={swiperNavNextRef}
-                onClick={() => swiperRef!.current?.slideNext()}
-              >
-                <img src={"/assets/icons/nav-right.svg"} className="w-full" />
-              </button>
-            </div>
-          </Swiper> */}
-
-          <div className="w-full h-20 custom-container">
-            <div className="border">
-              <SingleComponent
-                name="Razak Awudulai"
-                portfolio="Chief Executive Officer"
-                imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png"
-                description=""
-              />
-            </div>
+            <SingleLeadershipComponent
+              name="Nana Dwemoh Benneh"
+              portfolio="Chairman"
+              imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png"
+              description="Nana has 20+ years of local and international expertise in banking in various management roles across several countries in Africa and the UK. Nana has successfully led the team in significantly growing market share and profitability across the Bank’s Personal and Business Banking franchises. In January 2021, Nana was appointed Managing Director of UMB Bank."
+            />
           </div>
-        </>
+        </div>
+
+        <div className="w-full flex justify-center mt-20">
+          <button className="custom-button1">
+            <Link href="/about/management">See full team</Link>
+          </button>
+        </div>
       </div>
     </section>
   );
