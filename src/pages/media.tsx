@@ -26,7 +26,7 @@ const SingleSlide = ({
   return (
     <div>
       <div
-        className={`w-full flex flex-col justify-center  bg-transparent z-20  items-center   h-[25rem] ${
+        className={`w-full flex flex-col justify-center  bg-transparent z-20  items-center   h-[25rem]  ${
           currentIndex !== id && "py-10"
         } `}
       >
@@ -68,13 +68,13 @@ const Gallery = () => {
 
   return (
     <SiteLayout pageName={"Media"}>
-      <section className="bg-white text-[#1D365A] border py-36">
+      <section className="bg-white text-[#1D365A]  py-36">
         <div className="relative">
           <Swiper
             onBeforeInit={onBeforeInit}
             initialSlide={1}
             onActiveIndexChange={updateIndex}
-            // cssMode={true}
+            cssMode={true}
             effect={"coverflow"}
             spaceBetween={30}
             grabCursor={true}
@@ -149,7 +149,19 @@ const Gallery = () => {
                 id={4}
                 currentIndex={currentIndex}
                 title="Breast Cancer Awareness months"
-                imageURL={"/assets/img/gallery/image1.png"}
+                imageURL={
+                  "https://res.cloudinary.com/diek2uivi/image/upload/v1697780736/bsl-website/bsl/gallery/image4_rqpvz5.png"
+                }
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SingleSlide
+                id={5}
+                currentIndex={currentIndex}
+                title="Breast Cancer Awareness months"
+                imageURL={
+                  "https://res.cloudinary.com/diek2uivi/image/upload/v1689352702/bsl-website/bsl/gallery/image1_ukavqh.png"
+                }
               />
             </SwiperSlide>
             <div className=" flex justify-between   absolute top-[50%] bottom-[50%] sm:px-[25%] w-full px-6">

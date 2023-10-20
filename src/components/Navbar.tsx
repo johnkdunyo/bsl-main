@@ -170,7 +170,7 @@ const CustomNavList = ({ title, href }: { title: string; href: string }) => {
             <Link href="/">
               <h1 className="hover:font-medium">Publications</h1>
             </Link>
-            <Link href="/gallery">
+            <Link href="/media">
               <h1 className="hover:font-medium">Gallery</h1>
             </Link>
           </div>
@@ -179,8 +179,6 @@ const CustomNavList = ({ title, href }: { title: string; href: string }) => {
     </div>
   );
 };
-
-const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
 const Navbar = ({ pageName }: INavbar) => {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -208,6 +206,9 @@ const Navbar = ({ pageName }: INavbar) => {
   const [currentNav, setCurrentNav] = useState<ISubsidiaryNavs>(
     WebSubsidiaryNavs[0]
   );
+
+  const [showAboutUsDropdown, setShowAboutUsDropdown] = useState(false);
+  const [showMediaDropdown, setShowMediaDropdown] = useState(false);
 
   useEffect(() => {
     let clickHandler = (e: any) => {
@@ -348,11 +349,41 @@ const Navbar = ({ pageName }: INavbar) => {
                 // onMouseEnterHandler={() => setShowOurPortfolioDropdown(true)}
                 // onMouseLeaveHandler={() => setShowOurPortfolioDropdown(false)}
               /> */}
-              <CustomNavButton2
+
+              {/* anbout */}
+              <button
+                className={`${
+                  pageName === "About"
+                    ? "border-[#AB2346] border-b-[4px]"
+                    : "border-b-[4px] border-transparent"
+                } 
+                 relative px-2`}
+                onMouseEnter={() => setShowAboutUsDropdown(true)}
+                onMouseLeave={() => setShowAboutUsDropdown(false)}
+              >
+                <h1 className="font-medium text-md whitespace-nowrap hover:text-secondary">
+                  About Us
+                </h1>
+
+                {showAboutUsDropdown && (
+                  <div className="bg-white absolute h-fit w-fit text-primary px-2 py-1.5 rounded-md -ml-[25%] top-10">
+                    <ul className="flex flex-col items-start justify-start text-base font-medium gap-1.5">
+                      <li className="hover:text-secondary">
+                        <Link href="/about">About Us</Link>
+                      </li>
+                      <li className="hover:text-secondary">
+                        <Link href="/about/management">Management</Link>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </button>
+
+              {/* <CustomNavButton2
                 href="/about"
                 title="About Us"
                 active={pageName === "About"}
-              />
+              /> */}
 
               <CustomNavButton2
                 href="/product-&-services"
@@ -361,16 +392,44 @@ const Navbar = ({ pageName }: INavbar) => {
               />
 
               <CustomNavButton2
-                href="/"
+                href="/#trustedBy"
                 title="Client & Partners"
                 active={pageName === "Client & Partners"}
               />
 
-              <CustomNavButton2
+              {/* <CustomNavButton2
                 href="/media"
                 title="Media"
                 active={pageName === "Media"}
-              />
+              /> */}
+
+              <button
+                className={`${
+                  pageName === "Media"
+                    ? "border-[#AB2346] border-b-[4px]"
+                    : "border-b-[4px] border-transparent"
+                } 
+                 relative px-2`}
+                onMouseEnter={() => setShowMediaDropdown(true)}
+                onMouseLeave={() => setShowMediaDropdown(false)}
+              >
+                <h1 className="font-medium text-md whitespace-nowrap hover:text-secondary">
+                  Media
+                </h1>
+
+                {showMediaDropdown && (
+                  <div className="bg-white absolute h-fit w-fit text-primary px-2 py-1.5 rounded-md -ml-[25%] top-10">
+                    <ul className="flex flex-col items-start justify-start font-medium text-base gap-1.5">
+                      <li className="hover:text-secondary">
+                        <Link href="/media">Media</Link>
+                      </li>
+                      <li className="hover:text-secondary">
+                        <Link href="/media">Newsletter</Link>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </button>
 
               <CustomNavButton2
                 href="/career"
@@ -522,7 +581,7 @@ const Navbar = ({ pageName }: INavbar) => {
                   <Link href="/about">
                     <h1>About Us</h1>
                   </Link>
-                  <Link href="/">
+                  <Link href="/about/management">
                     <h1>Management</h1>
                   </Link>
                 </div>
@@ -565,7 +624,7 @@ const Navbar = ({ pageName }: INavbar) => {
                   <Link href="/">
                     <h1>Publications</h1>
                   </Link>
-                  <Link href="/gallery">
+                  <Link href="/media">
                     <h1>Gallery</h1>
                   </Link>
                 </div>

@@ -21,7 +21,7 @@ const SinglePartner = ({
 
 const TrustedBy = () => {
   return (
-    <section className=" bg-[#FFFFFF]">
+    <section className=" bg-[#FFFFFF]" id="trustedBy">
       <div className="py-20 flex flex-col justify-center items-center ">
         <div className="relative w-full flex justify-center">
           <div className="w-full border border-[#1D365A]" />
