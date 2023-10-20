@@ -1,20 +1,22 @@
 import SiteLayout from "@/components/Layout/SiteLayout";
-import CloudStorageSection from "@/components/businessPage/CloudStorageSection";
 import ComputingNetworkingSection from "@/components/businessPage/ComputingNetworkingSection";
-import DataCenterSection from "@/components/businessPage/DataCenterSection";
+import DataCenterSection from "@/components/businessPage/DeploymentServices";
 import HeroSection from "@/components/businessPage/HeroSection";
-import InfoMageSystems from "@/components/businessPage/InfoMageSystems";
+import ITConsulting from "@/components/businessPage/ITConsulting";
+import SupportServicesSection from "@/components/businessPage/SupportServicesSection";
 import React from "react";
+import ManagedServices from "@/components/businessPage/ManagedServices";
 
 const Business = () => {
   return (
     <SiteLayout pageName={"Product & Services"}>
       <>
         <HeroSection />
-        <InfoMageSystems />
+        <ITConsulting />
         <DataCenterSection />
-        <ComputingNetworkingSection />
-        <CloudStorageSection />
+        <SupportServicesSection />
+        {/* <ComputingNetworkingSection /> */}
+        <ManagedServices />
       </>
     </SiteLayout>
   );
