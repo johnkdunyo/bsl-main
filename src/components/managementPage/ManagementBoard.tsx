@@ -17,7 +17,7 @@ const ManagementData: IBordData[] = [
     description:
       "Samuel has 20+ years of professional experience in finance, accounting, taxation, and banking in multinational, regional, and local backgrounds in Ghana and beyond. (BSL, SPL, ISG, BDP, and Agrospectrum)",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/c_crop,w_1148,h_2040,ar_9:16,g_auto/v1697785137/bsl-website/bsl/management/SAM_OSEW_KWATIA_ma98pa.jpg",
   },
   {
     name: "Priscilla Abban",
@@ -25,7 +25,7 @@ const ManagementData: IBordData[] = [
     description:
       "Priscilla is a visionary HR Generalist with 20+ years of experience in leading reports through a collaborative management style and creating equitable opportunities for underrepresented employee group across Ghana. (BSL, SPL, ISG, BDP, and Agrospectrum)",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785135/bsl-website/bsl/management/PRISCILLA_ABBAN_uubwrj.jpg",
   },
   {
     name: "Harriet Dodoo",
@@ -33,7 +33,7 @@ const ManagementData: IBordData[] = [
     description:
       "Harriet has extensive management and leadership experience, altogether, over 10 years of experience in non-profit, banking and finance, and legal practice. (BSL, SPL, ISG, BDP, and Agrospectrum)",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/c_crop,w_1148,h_2040,ar_9:16,g_auto/v1697785133/bsl-website/bsl/management/HARRIET_eioxar.jpg",
   },
   {
     name: "Castro Antwi-Danso",
@@ -41,7 +41,7 @@ const ManagementData: IBordData[] = [
     description:
       "Castro is an experienced expert with 20+ years experience working in IT and agricultural industry. His extensive experience, makes him an invaluable asset in project management, sales marketing, finance and Agriculture (AgroSpectrum)",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785642/bsl-website/bsl/nopic_ifo8il.jpg",
   },
   {
     name: "Richard Adiase",
@@ -49,7 +49,7 @@ const ManagementData: IBordData[] = [
     description:
       "Richard is an Enterprise professional with 15+ years of building business units from scratch, developing, launching, building strong brands, and driving cross-functional teams to execute key project deliverables (Spectrum Fibre)",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785144/bsl-website/bsl/management/RICHARD_ADIASE_tksps5.jpg",
   },
   {
     name: "Morenike Ayodele",
@@ -57,7 +57,7 @@ const ManagementData: IBordData[] = [
     description:
       "Morenike is an accomplished and enthusiastic professional with 6+ years of managing corporate communications, marketing, and public relations functions.",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/c_crop,w_1148,h_2040,ar_9:16,g_auto/v1697785139/bsl-website/bsl/management/MORENIKE_AYODELE_kvka9n.jpg",
   },
   {
     name: "Joseph Yawson",
@@ -65,7 +65,7 @@ const ManagementData: IBordData[] = [
     description:
       "Joseph is an accomplished professional with 18+ years of experience in Information Systems, Technology, and Project Management. He holds diplomas in Information Systems Management (IMIS, UK), a BSc (Hons) in Computing & Information Systems from the University of Portsmouth, UK, and an M.A. in Information & Telecommunication Technology from KAIST. Currently, he serves as the Technical Deployment Manager at Broadspectrum Ghana Limited, leading project planning and quality management. (ISG)",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785133/bsl-website/bsl/management/JOSEPH_YAWSON_z33al8.jpg",
   },
 ];
 

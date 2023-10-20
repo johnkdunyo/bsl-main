@@ -23,7 +23,7 @@ const BoardData: IBordData[] = [
     description:
       "Nana has 20+ years of local and international expertise in banking in various management roles across several countries in Africa and the UK. Nana has successfully led the team in significantly growing market share and profitability across the Bank’s Personal and Business Banking franchises. In January 2021, Nana was appointed Managing Director of UMB Bank.",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/nana-main_wla7ns.png",
   },
   {
     name: "Kris Senanu",
@@ -31,7 +31,7 @@ const BoardData: IBordData[] = [
     description:
       "Kris is an accomplished business leader with 20+ years of extensive experience working with and helping to grow Startups, FinTech, and Tertiary Educational Institutions. Kris is a transformational leader and ICT champion with a passion for finding, grooming, and coaching talent, and can navigate ambiguity within multi-level and matrixed organizations.",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/kris-main_emy7v4.png",
   },
   {
     name: "Edward Abrokwah",
@@ -39,7 +39,7 @@ const BoardData: IBordData[] = [
     description:
       "Edward has 20+ years, first as a Technical Consultant and currently as a Principal Economist within the Ministry of Finance, Ghana. He has worked in various capacities and divisions in the Ministry including the Oil and Gas, Debt Management Division, Public Infrastructure Investments Division, the Economic Research, Forecasting Division, and the Research Desk of the Tax Policy Unit.",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785642/bsl-website/bsl/nopic_ifo8il.jpg",
   },
 ];
 

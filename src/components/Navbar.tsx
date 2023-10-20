@@ -53,6 +53,13 @@ const WebSubsidiaryNavs: ISubsidiaryNavs[] = [
     imgSRC: "/assets/icons/bdp-main.svg",
     imgSRC2: "/assets/icons/bdp.svg",
   },
+  {
+    id: 5,
+    title: "AgroSpectrum",
+    href: process.env.NEXT_PUBLIC_BSL_URL!,
+    imgSRC: "/assets/icons/agro-main.png",
+    imgSRC2: "/assets/icons/agro-main.png",
+  },
 ];
 
 interface INavbar {
@@ -110,14 +117,14 @@ const CustomNavButton2 = ({
         active
           ? "border-[#AB2346] border-b-[4px]"
           : "border-b-[4px] border-transparent"
-      } `}
+      } text-base`}
     >
       {href ? (
         <Link href={href}>
           <h1
             className={`${
               textColorWhite ? "text-white" : "text-primary"
-            } font-medium text-md whitespace-nowrap hover:text-secondary`}
+            } font-medium  whitespace-nowrap hover:text-secondary`}
           >
             {title}
           </h1>
@@ -126,7 +133,7 @@ const CustomNavButton2 = ({
         <h1
           className={`${
             textColorWhite ? "text-white" : "text-primary"
-          } font-medium text-md whitespace-nowrap `}
+          } font-medium  whitespace-nowrap `}
         >
           {title}
         </h1>
@@ -313,7 +320,7 @@ const Navbar = ({ pageName }: INavbar) => {
                 initial={{ opacity: 0 }}
                 transition={{ duration: 2 }}
                 exit={{ opacity: 0 }}
-                className="flex justify-between w-3/4 h-10 pl-3 gap-4"
+                className="flex justify-between w-3/4 h-10 pl-3 gap-2 z-20   pr-2 relative backdrop-blur-3xl "
                 onMouseEnter={() =>
                   openDesktopSubsidiaryMenu &&
                   setOpenDesktopSubsidiaryMenu(true)
@@ -333,7 +340,7 @@ const Navbar = ({ pageName }: INavbar) => {
           </div>
 
           <div className="flex gap-16 w-5/12   items-center justify-end   border-red-500 relative">
-            <div className="flex gap-2 ">
+            <div className="flex gap-1.5 ">
               <CustomNavButton2
                 href="/"
                 title="Home"
@@ -361,13 +368,13 @@ const Navbar = ({ pageName }: INavbar) => {
                 onMouseEnter={() => setShowAboutUsDropdown(true)}
                 onMouseLeave={() => setShowAboutUsDropdown(false)}
               >
-                <h1 className="font-medium text-md whitespace-nowrap hover:text-secondary">
+                <h1 className="font-medium text-base whitespace-nowrap hover:text-secondary">
                   About Us
                 </h1>
 
                 {showAboutUsDropdown && (
                   <div className="bg-white absolute h-fit w-fit text-primary px-2 py-1.5 rounded-md -ml-[25%] top-10">
-                    <ul className="flex flex-col items-start justify-start text-base font-medium gap-1.5">
+                    <ul className="flex flex-col items-start justify-start  font-medium gap-1.5">
                       <li className="hover:text-secondary">
                         <Link href="/about">About Us</Link>
                       </li>
@@ -409,17 +416,17 @@ const Navbar = ({ pageName }: INavbar) => {
                     ? "border-[#AB2346] border-b-[4px]"
                     : "border-b-[4px] border-transparent"
                 } 
-                 relative px-2`}
+                 relative px-2 text-base`}
                 onMouseEnter={() => setShowMediaDropdown(true)}
                 onMouseLeave={() => setShowMediaDropdown(false)}
               >
-                <h1 className="font-medium text-md whitespace-nowrap hover:text-secondary">
+                <h1 className="font-medium text-sm whitespace-nowrap hover:text-secondary">
                   Media
                 </h1>
 
                 {showMediaDropdown && (
                   <div className="bg-white absolute h-fit w-fit text-primary px-2 py-1.5 rounded-md -ml-[25%] top-10">
-                    <ul className="flex flex-col items-start justify-start font-medium text-base gap-1.5">
+                    <ul className="flex flex-col items-start justify-start font-medium  gap-1.5">
                       <li className="hover:text-secondary">
                         <Link href="/media">Media</Link>
                       </li>

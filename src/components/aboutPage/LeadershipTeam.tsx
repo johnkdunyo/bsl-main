@@ -69,7 +69,7 @@ const LeadershipTeam = () => {
             <SingleLeadershipComponent
               name="Nana Dwemoh Benneh"
               portfolio="Chairman"
-              imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png"
+              imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/nana-main_wla7ns.png"
               description="Nana has 20+ years of local and international expertise in banking in various management roles across several countries in Africa and the UK. Nana has successfully led the team in significantly growing market share and profitability across the Bank’s Personal and Business Banking franchises. In January 2021, Nana was appointed Managing Director of UMB Bank."
             />
           </div>
