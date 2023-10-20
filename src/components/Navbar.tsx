@@ -671,7 +671,10 @@ const Navbar = ({ pageName }: INavbar) => {
                   <img src={"/assets/icons/menu-nav/isg.svg"} />
                 </button>
                 <button className="col">
-                  <img src={"/assets/icons/menu-nav/eagric.svg"} />
+                  <img
+                    src={"/assets/icons/menu-nav/agro.png"}
+                    className="h-12"
+                  />
                 </button>
               </div>
             </div>
