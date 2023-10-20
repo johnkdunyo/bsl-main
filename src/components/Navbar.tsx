@@ -56,7 +56,7 @@ const WebSubsidiaryNavs: ISubsidiaryNavs[] = [
   {
     id: 5,
     title: "AgroSpectrum",
-    href: process.env.NEXT_PUBLIC_BSL_URL!,
+    href: process.env.NEXT_PUBLIC_AGRO_URL!,
     imgSRC: "/assets/icons/agro-main.png",
     imgSRC2: "/assets/icons/agro-main.png",
   },
