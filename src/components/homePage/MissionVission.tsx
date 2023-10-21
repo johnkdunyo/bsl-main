@@ -3,6 +3,11 @@ import { Animate } from "../animations/ScrollAnimator";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 const SingleSlide = ({
   title,
   description,
