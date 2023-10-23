@@ -57,8 +57,8 @@ const WebSubsidiaryNavs: ISubsidiaryNavs[] = [
     id: 5,
     title: "AgroSpectrum",
     href: process.env.NEXT_PUBLIC_AGRO_URL!,
-    imgSRC: "/assets/icons/agro-main.png",
-    imgSRC2: "/assets/icons/agro-main.png",
+    imgSRC: "/assets/icons/agro-main.svg",
+    imgSRC2: "/assets/icons/agro-main.svg",
   },
 ];
 
@@ -320,7 +320,7 @@ const Navbar = ({ pageName }: INavbar) => {
                 initial={{ opacity: 0 }}
                 transition={{ duration: 2 }}
                 exit={{ opacity: 0 }}
-                className="flex justify-between w-3/4 h-10 pl-3 gap-2 z-20   pr-2 relative backdrop-blur-3xl "
+                className="flex justify-between w-3/4 h-10 pl-3 gap-2 z-20   pr-2 relative "
                 onMouseEnter={() =>
                   openDesktopSubsidiaryMenu &&
                   setOpenDesktopSubsidiaryMenu(true)
