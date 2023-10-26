@@ -17,36 +17,66 @@ const SingleSlide = ({
   currentIndex,
   title,
   imageURL,
+  href,
 }: {
   id: number;
   currentIndex: number;
   title: string;
   imageURL: string;
+  href: string;
 }) => {
   return (
-    <div>
-      <div
-        className={`w-full flex flex-col justify-center  bg-transparent z-20  items-center   h-[25rem]  ${
-          currentIndex !== id && "py-10"
-        } `}
-      >
-        <div
-          className={` border-red-500 relative w-full  ${
-            currentIndex === id ? "h-full " : "h-full"
-          } `}
-        >
-          <Image
-            src={imageURL}
-            className="h-full  w-full object-cover "
-            alt="image"
-            fill
-          />
+    <>
+      {currentIndex === id ? (
+        <a className={`${currentIndex === id && ""}`} href={`/media${href}`}>
+          <div
+            className={`w-full flex flex-col justify-center  bg-transparent z-20  items-center   h-[25rem]  ${
+              currentIndex !== id && "py-10"
+            } `}
+          >
+            <div
+              className={` border-red-500 relative w-full  ${
+                currentIndex === id ? "h-full " : "h-full"
+              } `}
+            >
+              <Image
+                src={imageURL}
+                className="h-full  w-full object-cover "
+                alt="image"
+                fill
+              />
+            </div>
+          </div>
+          <div className={` ${currentIndex !== id && "hidden"}`}>
+            <h1 className="text-center text-xl sm:text-2xl mt-4">{title}</h1>
+          </div>
+        </a>
+      ) : (
+        <div>
+          <div
+            className={`w-full flex flex-col justify-center  bg-transparent z-20  items-center   h-[25rem]  ${
+              currentIndex !== id && "py-10"
+            } `}
+          >
+            <div
+              className={` border-red-500 relative w-full  ${
+                currentIndex === id ? "h-full " : "h-full"
+              } `}
+            >
+              <Image
+                src={imageURL}
+                className="h-full  w-full object-cover "
+                alt="image"
+                fill
+              />
+            </div>
+          </div>
+          <div className={` ${currentIndex !== id && "hidden"}`}>
+            <h1 className="text-center text-xl sm:text-2xl mt-4">{title}</h1>
+          </div>
         </div>
-      </div>
-      <div className={` ${currentIndex !== id && "hidden"}`}>
-        <h1 className="text-center text-xl sm:text-2xl mt-4">{title}</h1>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 
@@ -122,6 +152,7 @@ const Gallery = () => {
                 imageURL={
                   "https://res.cloudinary.com/diek2uivi/image/upload/v1689352702/bsl-website/bsl/gallery/image1_ukavqh.png"
                 }
+                href="/breast-cancer"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -132,6 +163,7 @@ const Gallery = () => {
                 imageURL={
                   "https://res.cloudinary.com/diek2uivi/image/upload/v1689352703/bsl-website/bsl/gallery/image3_jwxt3x.png"
                 }
+                href="/breast-cancer"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -142,6 +174,7 @@ const Gallery = () => {
                 imageURL={
                   "https://res.cloudinary.com/diek2uivi/image/upload/v1689352703/bsl-website/bsl/gallery/image2_p9w2pj.png"
                 }
+                href="/breast-cancer"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -152,6 +185,7 @@ const Gallery = () => {
                 imageURL={
                   "https://res.cloudinary.com/diek2uivi/image/upload/v1697780736/bsl-website/bsl/gallery/image4_rqpvz5.png"
                 }
+                href="/breast-cancer"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -162,6 +196,7 @@ const Gallery = () => {
                 imageURL={
                   "https://res.cloudinary.com/diek2uivi/image/upload/v1689352702/bsl-website/bsl/gallery/image1_ukavqh.png"
                 }
+                href="/breast-cancer"
               />
             </SwiperSlide>
             <div className=" flex justify-between   absolute top-[50%] bottom-[50%] sm:px-[25%] w-full px-6">
