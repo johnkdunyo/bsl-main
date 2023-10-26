@@ -41,7 +41,7 @@ const ManagementData: IBordData[] = [
     description:
       "Lovestone is an experienced professional with 25+ years working in West Africa in the design, implementation, and operations of technology solutions working in both Enterprise and service provider environments. ",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1698322179/bsl-website/bsl/board/lovestone_t22qmq.png",
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785133/bsl-website/bsl/management/LOVE_STONE_MAMATAH_nk38mw.jpg",
   },
   {
     name: "Nana Kwabena Aduhene",
@@ -49,7 +49,7 @@ const ManagementData: IBordData[] = [
     description:
       "Nana is a seasoned senior Telecommunications and   IT executive with 18+ years of experience involved in projects covering end-to-end telecom functions and   infrastructure management in Africa and beyond",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785642/bsl-website/bsl/nopic_ifo8il.jpg",
+      "https://res.cloudinary.com/diek2uivi/image/upload/c_crop,w_1200,h_2133,ar_9:16,g_auto/v1697785141/bsl-website/bsl/management/NANA_ADUHENE_1_toje7z.jpg",
   },
   {
     name: "Castro Antwi-Danso",
@@ -57,7 +57,7 @@ const ManagementData: IBordData[] = [
     description:
       "Castro is an experienced expert with 20+ years experience working in IT and agricultural industry. His extensive experience, makes him an invaluable asset in project management, sales marketing, finance and Agriculture (AgroSpectrum)",
     imageURL:
-      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785642/bsl-website/bsl/nopic_ifo8il.jpg",
+      "https://res.cloudinary.com/diek2uivi/image/upload/c_crop,w_1400,h_2489,ar_9:16,g_auto/v1698324747/bsl-website/bsl/management/castro_sagwfp.jpg",
   },
   {
     name: "Richard Adiase",
