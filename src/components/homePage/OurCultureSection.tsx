@@ -131,7 +131,7 @@ const OurCultureSection = () => {
             <p className="text-base tracking-wide leading-7">
               From our diverse selection of services to our corporate culture
               and relationships, our goal is for all our services to live up to
-              the tenets of our Core Values. Because we know that what we do
+              the tenets of our core values because we know that, what we do
               everyday determines our reputation, the level of success we
               achieve, and the positive impact we can make in Africa and beyond.
             </p>

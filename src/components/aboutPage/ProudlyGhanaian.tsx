@@ -31,9 +31,10 @@ const ProudlyGhanaian = () => {
                 communication technology company that plays a key role in the
                 technological industry. Broadspectrum has partnered with GCB
                 Bank Limited to launch the first bank-backed mobile money
-                service (G-Money) in Ghana. As the enablers of G-Money, which
-                has reached over 2.4 million customers nationwide, GCB recently
-                emerged as the winner at the 2022 Ghana Club 100 Awards.
+                service (G- Money) in Ghana. As the driving force behind
+                G-Money, which has garnered a customer base exceeding 2.4
+                million nationwide, GCB has recently secured victory at the 2022
+                Ghana Club 100 Awards.
               </p>
             </Animate.FadeUp>
           </div>

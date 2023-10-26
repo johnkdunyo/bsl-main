@@ -14,7 +14,7 @@ export default function About() {
         <HeroSection />
         <ProudlyGhanaian />
         <BlueLearnMore />
-        <UnanmedSection />
+        {/* <UnanmedSection /> */}
         <OurSubsidiaries />
         <LeadershipTeam />
       </>

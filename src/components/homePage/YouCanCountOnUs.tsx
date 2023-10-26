@@ -70,10 +70,10 @@ const YouCanCountOnUs = () => {
             <Animate.FadeUp>
               <p className="text-white paragraphText1">
                 As a business we are committed to offering world class
-                connectivity and digital solutions to our clients. This
-                dedication has enabled us to build a dynamic 360 solution
-                approach for connectivity, digital payments services, internet
-                service solutions and value added services
+                connectivity and digital solutions to our clients. Our
+                Dedication to this has enabled us to build a dynamic 360
+                solution approach for connectivity, digital payment services,
+                internet service solutions and value-added services
               </p>
             </Animate.FadeUp>
           </div>
@@ -91,11 +91,15 @@ const YouCanCountOnUs = () => {
         <section className="flex flex-col custom-container gap-10  my-10 ">
           <WhyChooseUsComponent
             imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065605/bsl-website/bsl/picture1_r7bdnp.png"
-            title="We Plan for your Success and also connect your business to the digital world"
-            description="Our team of experts comprise of specialists with years of
-          experience that come from different IT backgrounds. We identify our clients’ needs through detailed discussions
-          and assessments of their business and provide them with our various
-          solutions."
+            title="We plan for your success and connect your business to the digital world."
+            description="Our team of experts comprise of
+specialists with years of experience
+who come from different IT
+backgrounds. We identify our clients’
+needs through detailed deliberation
+and assessments of their business and
+provide them with our various
+solutions."
             orderText="last"
           />
           <WhyChooseUsComponent

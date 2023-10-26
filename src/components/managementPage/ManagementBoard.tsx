@@ -74,14 +74,14 @@ const ManagementBoard = () => {
     <div className="py-20 z-10 relative">
       <div className="  custom-container sm:mt-16 sm:-mb-8 sm:hidden">
         <h1 className="text-secondary text-center font-bold h-full uppercase  text-[3.4rem] sm:text-[10rem]    leading-[3.5rem]  opacity-30   ">
-          Management Board
+          Management Team
         </h1>
       </div>
 
       {/* big screens */}
       <div className="hidden sm:block  sm:-mt-10  sm:-mb-8 w-full  text-center">
         <h1 className="text-secondary text-center font-bold h-full uppercase  sm:text-[7rem]  whitespace-pre-line leading-[7.0rem]  opacity-30   ">
-          Management Board
+          Management Team
         </h1>
       </div>
 

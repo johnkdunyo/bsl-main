@@ -420,7 +420,7 @@ const Navbar = ({ pageName }: INavbar) => {
                 onMouseEnter={() => setShowMediaDropdown(true)}
                 onMouseLeave={() => setShowMediaDropdown(false)}
               >
-                <h1 className="font-medium text-sm whitespace-nowrap hover:text-secondary">
+                <h1 className="font-medium text-base whitespace-nowrap hover:text-secondary">
                   Media
                 </h1>
 

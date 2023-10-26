@@ -83,16 +83,32 @@ const OurSubsidiaries = () => {
             href="https://sfl.com.gh/"
           />
           <SingleSubsidiaryCard
-            description="Payment Service Provider (PSP) Licensed Business providing services for payment gateway and bill Payment – E.G. Northern Electricity Distribution Company (NedCo), Marketplace (E-Agric)"
+            descriptionIntro="Payment Service Provider (PSP)"
+            description="Licensed Business providing services
+for payment gateway and bill Payment
+– E.G. Northern Electricity Distribution
+Company (NedCo), Marketplace (E-
+Agric)"
             imageURL="/assets/icons/bdp.svg"
             href="http://bdp.com.gh/"
           />
         </div>
         <SingleSubsidiaryCard
-          descriptionIntro="A well-resourced infrastructure service provider in IE & Telecoms"
-          description="Infrastructure Services Ltd (ISG) is an infrastructure services company providing logistic deployment, maintenance, and support services in the power, telecommunication, and mine Support services sectors of Ghana. The services of ISG are internally leveraged by all affiliates for efficiency and control. Our Services include:"
+          descriptionIntro="A well-resourced infrastructure service provider in IE &amp; Telecoms"
+          description="Infra Services Ghana Ltd (ISG) is an
+infrastructure service company
+providing logistic, deployment,
+maintenance, and support services in
+the power, telecommunication, and
+mining support service sectors of
+Ghana. The services of ISG are
+internally leveraged by all affiliates for
+efficiency and control. Our Services
+include:"
           descriptionArrayList={[
-            "Fiber infrastructure Deployment Microwave Radio Deployment LAN infrastructure deployments",
+            "Fiber infrastructure Deployment",
+            "Microwave Radio Deployment",
+            "LAN infrastructure deployments",
             "Data Centre build and management",
             "Service Maintenance and Support",
           ]}
