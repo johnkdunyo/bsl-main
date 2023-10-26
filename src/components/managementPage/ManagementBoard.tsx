@@ -31,9 +31,25 @@ const ManagementData: IBordData[] = [
     name: "Harriet Dodoo",
     portfolio: "Group Legal/Compliance",
     description:
-      "Harriet has extensive management and leadership experience, altogether, over 10 years of experience in non-profit, banking and finance, and legal practice. (BSL, SPL, ISG, BDP, and Agrospectrum)",
+      "Harriet has extensive management and leadership experience, altogether, over 10 years of experience in non-profit, banking and finance, and legal practice. (AMLRO, BSL, SPL, ISG, BDP, and Agrospectrum)",
     imageURL:
       "https://res.cloudinary.com/diek2uivi/image/upload/c_crop,w_1148,h_2040,ar_9:16,g_auto/v1697785133/bsl-website/bsl/management/HARRIET_eioxar.jpg",
+  },
+  {
+    name: "Lovestone Mamattah",
+    portfolio: "Group CTO",
+    description:
+      "Lovestone is an experienced professional with 25+ years working in West Africa in the design, implementation, and operations of technology solutions working in both Enterprise and service provider environments. ",
+    imageURL:
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1698322179/bsl-website/bsl/board/lovestone_t22qmq.png",
+  },
+  {
+    name: "Nana Kwabena Aduhene",
+    portfolio: "Group Head - PMO",
+    description:
+      "Nana is a seasoned senior Telecommunications and   IT executive with 18+ years of experience involved in projects covering end-to-end telecom functions and   infrastructure management in Africa and beyond",
+    imageURL:
+      "https://res.cloudinary.com/diek2uivi/image/upload/v1697785642/bsl-website/bsl/nopic_ifo8il.jpg",
   },
   {
     name: "Castro Antwi-Danso",

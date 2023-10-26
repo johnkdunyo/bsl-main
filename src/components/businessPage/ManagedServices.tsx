@@ -24,8 +24,8 @@ const ManagedServices = () => {
             </Animate.FadeUp>
 
             <p className="paragraphText1">
-              Unburden your it team with our comprehensive managed services.
-              from network monitoring to cybersecurity management, we handle the
+              Unburden your IT team with our comprehensive managed services.
+              From network monitoring to cybersecurity management, we handle the
               complexities, allowing your team to focus on innovation.
             </p>
           </div>

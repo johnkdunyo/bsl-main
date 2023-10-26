@@ -63,7 +63,19 @@ const LeadershipTeam = () => {
               name="Razak Awudulai"
               portfolio="Chief Executive Officer"
               imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065715/bsl-website/bsl/board/razak-main_i8hbjw.png"
-              description="Razak is an accomplished business leader with 20+ years. of experience in creating enabling environments and building high-performance teams. He is passionate about the technology ecosystem and has helped to grow many tech businesses both in the public and private sectors globally. More specifically, he has extensive experience working with and helping to provide unique and innovative digital solutions to boost Africa’s digital economy."
+              description="Razak is an accomplished business
+leader with 20+ years of experience in
+creating enabling environments and
+building high-performance teams. He is
+passionate about the technology
+ecosystem and has helped to grow
+many tech businesses both in the
+public and private sectors globally.
+More specifically, he has extensive
+experience working with and helping
+to provide unique and innovative
+digital solutions to boost Africa’s digital
+economy."
             />
 
             <SingleLeadershipComponent
