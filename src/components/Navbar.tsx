@@ -431,7 +431,7 @@ const Navbar = ({ pageName }: INavbar) => {
                         <Link href="/media">Media</Link>
                       </li>
                       <li className="hover:text-secondary">
-                        <Link href="/media">Newsletter</Link>
+                        <Link href="/">Newsletter</Link>
                       </li>
                     </ul>
                   </div>

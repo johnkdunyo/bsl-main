@@ -17,13 +17,13 @@ const WhyChooseUsComponent = ({
 }) => {
   return (
     <div className="flex flex-col sm:flex-row justify-center gap-10 sm:gap-24  ">
-      <div className="w-full  flex justify-center ">
+      <div className="w-full  flex justify-center  h-[28rem]">
         <Parallax offset={60}>
           <Image
             src={imageURL}
-            className="w-full p-0 sm:p-3 md:p-6 "
-            height={750}
-            width={747}
+            className="w-full p-0 h-full  border-red-300 rounded-[30px] object-cover object-center"
+            height={150}
+            width={2900}
             blurDataURL={imageURL}
             placeholder="blur"
             alt="sample image"
@@ -33,11 +33,11 @@ const WhyChooseUsComponent = ({
 
       <div
         className={`flex flex-col justify-center gap-10 w-full order-last ${
-          orderText === "first" ? "sm:order-first" : "sm:order-last"
+          orderText === "first" ? "sm:order-first  sm:pl-8" : "sm:order-last"
         } `}
       >
         <Animate.FadeUp>
-          <h1 className="text-3xl font-medium">{title}</h1>
+          <h1 className="text-3xl sm:text-4xl font-medium">{title}</h1>
         </Animate.FadeUp>
         <Animate.FadeUp>
           <p className="text-lg tracking-wide">{description}</p>
@@ -103,7 +103,7 @@ solutions."
             orderText="last"
           />
           <WhyChooseUsComponent
-            imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686065605/bsl-website/bsl/picture2_jbf6ka.png"
+            imageURL="https://res.cloudinary.com/diek2uivi/image/upload/v1698407459/bsl-website/bsl/san_f69rx1.jpg"
             title="We Transform"
             description="We assist businesses to have a seamless workflow across all units through our subsidiaries and multiple digital services and solutions."
             orderText="first"

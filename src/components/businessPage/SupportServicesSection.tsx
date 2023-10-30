@@ -8,8 +8,8 @@ const SupportServicesSection = () => {
       <div className="custom-container flex flex-col h-full  lg:flex-row justify-between py-0 md:py-20 gap-10 ">
         <div className=" w-full md:h-[45rem]  border-black  -mt-20 border sm:-mt-[10rem] lg:-mt-[0rem] z-20 ">
           <Image
-            src="https://res.cloudinary.com/diek2uivi/image/upload/v1686141784/bsl-website/bsl/business/datacenter_jynmtj.jpg"
-            blurDataURL="https://res.cloudinary.com/diek2uivi/image/upload/v1686141784/bsl-website/bsl/business/datacenter_jynmtj.jpg"
+            src="https://res.cloudinary.com/diek2uivi/image/upload/v1698407453/bsl-website/bsl/_MG_1671_am5ak4.jpg"
+            blurDataURL="https://res.cloudinary.com/diek2uivi/image/upload/v1698407453/bsl-website/bsl/_MG_1671_am5ak4.jpg"
             placeholder="blur"
             className="w-full md:h-full object-cover   h-[30rem] z-20  border-red-600 "
             alt="info mgt"
