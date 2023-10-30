@@ -148,31 +148,31 @@ const Gallery = () => {
               <SingleSlide
                 id={1}
                 currentIndex={currentIndex}
-                title="Breast Cancer Awareness months"
+                title="CSR"
                 imageURL={
-                  "https://res.cloudinary.com/diek2uivi/image/upload/v1689352702/bsl-website/bsl/gallery/image1_ukavqh.png"
+                  "https://res.cloudinary.com/diek2uivi/image/upload/v1698410244/bsl-website/bsl/gallery/CSR/Broadspectrum_sponsors_Farmers_day_rchzwg.jpg"
                 }
-                href="/breast-cancer"
+                href="/csr"
               />
             </SwiperSlide>
             <SwiperSlide>
               <SingleSlide
                 id={2}
                 currentIndex={currentIndex}
-                title="Breast Cancer Awareness months"
+                title="Awards"
                 imageURL={
-                  "https://res.cloudinary.com/diek2uivi/image/upload/v1689352703/bsl-website/bsl/gallery/image3_jwxt3x.png"
+                  "https://res.cloudinary.com/diek2uivi/image/upload/v1698410245/bsl-website/bsl/gallery/Awards/2022_GIITA_Awards_jplhwi.jpg"
                 }
-                href="/breast-cancer"
+                href="/awards"
               />
             </SwiperSlide>
             <SwiperSlide>
               <SingleSlide
                 id={3}
                 currentIndex={currentIndex}
-                title="Breast Cancer Awareness months"
+                title="Breast Cancer Awareness Month"
                 imageURL={
-                  "https://res.cloudinary.com/diek2uivi/image/upload/v1689352703/bsl-website/bsl/gallery/image2_p9w2pj.png"
+                  "https://res.cloudinary.com/diek2uivi/image/upload/v1698329762/bsl-website/bsl/gallery/breast-cancer/4_biyqk4.png"
                 }
                 href="/breast-cancer"
               />
@@ -181,9 +181,9 @@ const Gallery = () => {
               <SingleSlide
                 id={4}
                 currentIndex={currentIndex}
-                title="Breast Cancer Awareness months"
+                title="Breast Cancer Awareness Month"
                 imageURL={
-                  "https://res.cloudinary.com/diek2uivi/image/upload/v1697780736/bsl-website/bsl/gallery/image4_rqpvz5.png"
+                  "https://res.cloudinary.com/diek2uivi/image/upload/v1698329762/bsl-website/bsl/gallery/breast-cancer/4_biyqk4.png"
                 }
                 href="/breast-cancer"
               />
@@ -192,9 +192,9 @@ const Gallery = () => {
               <SingleSlide
                 id={5}
                 currentIndex={currentIndex}
-                title="Breast Cancer Awareness months"
+                title="Breast Cancer Awareness Month"
                 imageURL={
-                  "https://res.cloudinary.com/diek2uivi/image/upload/v1689352702/bsl-website/bsl/gallery/image1_ukavqh.png"
+                  "https://res.cloudinary.com/diek2uivi/image/upload/v1698329762/bsl-website/bsl/gallery/breast-cancer/4_biyqk4.png"
                 }
                 href="/breast-cancer"
               />
