@@ -117,14 +117,14 @@ const CustomNavButton2 = ({
         active
           ? "border-[#AB2346] border-b-[4px]"
           : "border-b-[4px] border-transparent"
-      } text-base`}
+      } text-base `}
     >
       {href ? (
         <Link href={href}>
           <h1
             className={`${
               textColorWhite ? "text-white" : "text-primary"
-            } font-medium  whitespace-nowrap hover:text-secondary`}
+            } font-medium  whitespace-nowrap hover:text-secondary  mix-blend-lighten `}
           >
             {title}
           </h1>
@@ -284,6 +284,7 @@ const Navbar = ({ pageName }: INavbar) => {
               setOpenDesktopSiteMenu((prev) => !prev);
               setOpenSubsidiaryMenu(false);
             }}
+            className=""
           >
             <img src={"/assets/icons/home-2.svg"} className="h-4/5" />
           </button>
@@ -603,7 +604,7 @@ const Navbar = ({ pageName }: INavbar) => {
                 </h1>
               </Link>
 
-              <Link href="/">
+              <Link href="/#trustedBy">
                 <h1
                   className="text-[#1D365A] font-medium text-3xl"
                   onClick={() => setOpenDesktopSiteMenu(false)}
@@ -684,7 +685,7 @@ const Navbar = ({ pageName }: INavbar) => {
                 className="custom-button1"
                 onClick={() => setOpenDesktopSiteMenu(false)}
               >
-                <Link href="/enquiry">Get in Touch</Link>
+                <Link href="/contact-us">Get in Touch</Link>
               </button>
             </div>
           </div>

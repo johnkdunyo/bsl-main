@@ -37,7 +37,7 @@ const Footer = () => {
             </h1>
           </Animate.FadeUp>
           <button className="custom-button1">
-            <Link href="/enquiry">Get in Touch</Link>
+            <Link href="/contact-us">Get in Touch</Link>
           </button>
         </div>
 
@@ -151,8 +151,7 @@ const Footer = () => {
               name="twitter"
             />
             <SocialMediaButtons
-              href="https://www.facebook.com/broadspec
-trumgroup/."
+              href="https://www.facebook.com/broadspectrumgroup/."
               name="facebook"
             />
           </div>

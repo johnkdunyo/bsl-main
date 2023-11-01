@@ -120,7 +120,7 @@ include:"
           descriptionIntro="AgroSpectrum"
           description="The Strategic Business Unit offers Agric Marketplace services which include Farm 2 Factory, Farm 2 Retail, Farm 2 Table, Planting for Food & Jobs, Subsidy programs, Insurance, Healthcare, loans for farmers, Weather & Agronomy services, Agric Value Chain actors, Cooperatives-Out-grower services. BSL has delivered an E- Agriculture Management Platform to the Ministry of Food and Agriculture (MoFA) which included the digital registration of 1.6Million farmers and the deployment of the first- ever electronic subsidy redemption program in Ghana."
           imageURL="/assets/icons/agro-main.png"
-          href="https://isg.com.gh/"
+          href="https://www.agrospectrumgh.com"
         />
       </div>
     </section>
